@@ -16,6 +16,15 @@ set ttimeout		" time out for key codes
 set ttimeoutlen=100	" wait up to 100ms after Esc for special key
 set display=truncate
 
+inoremap <C-j> <C-n>
+inoremap <C-k> <C-p>
+inoremap <expr> <TAB> MyComplete()
+inoremap <expr> . MyComplete()
+
+func MyComplete()
+      return ".\<C-X>\<C-O>"
+endfunc
+
 if has('mouse')
   set mouse=a
 endif
