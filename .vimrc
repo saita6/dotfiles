@@ -31,7 +31,7 @@ endif
 
 if &t_Co > 2 || has("gui_running")
   set hlsearch
-  colorscheme  ron" or 'murphy' 
+  colorscheme  murphy " or 'ron' 
   syntax on
 endif
 
