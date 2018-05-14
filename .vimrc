@@ -18,7 +18,6 @@ set display=truncate
 
 inoremap <C-j> <C-n>
 inoremap <C-k> <C-p>
-inoremap <expr> <TAB> MyComplete()
 inoremap <expr> . MyComplete()
 
 func MyComplete()
@@ -28,6 +27,7 @@ endfunc
 if has('mouse')
   set mouse=a
 endif
+
 
 if &t_Co > 2 || has("gui_running")
   set hlsearch
